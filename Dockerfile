@@ -49,4 +49,4 @@ FROM build AS validate-build
 RUN status=$(git status --porcelain -- dist); if [ -n "$status" ]; then echo $status; exit 1; fi
 
 FROM base AS dev
-ENTRYPOINT ["bash"]
+ENTRYPOINT ["bash"] 
